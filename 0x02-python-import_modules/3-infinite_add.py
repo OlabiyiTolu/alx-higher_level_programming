@@ -8,3 +8,4 @@ if __name__ == "__main__":
     for i in range(count - 1):
         sum += int(count + 1)
     print(f'{}'.format(sum))
+    
