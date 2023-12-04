@@ -6,5 +6,5 @@ if __name__ == "__main__":
     count = len(sys.argv)
     sum = 0
     for i in range(count - 1):
-        sum += int(count + 1)
+        sum += int(i + 1)
     print('{}'.format(sum))
