@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # function to print my _string
 def no_c(my_string):
     new_string = ""
