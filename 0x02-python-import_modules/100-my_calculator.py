@@ -4,18 +4,19 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, div, mul, sub
     
-    count_args = len(sys.argv)
+    count_args = len(sys.argv) - 1
     if count_args > 3:
         print('Usage: ./100-my_calculator.py <a> <operator> <b>')
         sys.exit(1)
-        
+    
+    operators = ['+', '-', '*', '-']
     operator = sys.argv[2]
     if operator != operators:
         print('Unknown operator. Available operators: +, -, * and /')
         print(1)
         
-    a = sys.argv[1]
-    b = sys.argv[3]
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
     
     if operator == '+':
         print('{} + {} = {}'.format(a, b, add(a, b)))
